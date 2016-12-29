@@ -23,4 +23,12 @@ my_config.x_label_rotation = 45 			# 绕x轴旋转45度
 my_config.show_legend = False				# 不显示图例
 my_config.truncate_label = 12				# 截断(鼠标悬浮显示全部名称) 15个字符, -1: 不截断
 my_config.show_y_guides = True				# 不显示y轴水平说明
-my_config.width = 1000						# 宽度, 更适配浏览器
+my_config.width = 1000					# 宽度, 更适配浏览器
+
+# 添加到svg文件, 在浏览器显示
+chart = pygal.Bar(my_config, style=my_style)
+chart.title = 'Most-Starred Python Projects on GitHub'
+chart.x_labels = names
+
+chart.add('', plot_dicts)
+chart.render_to_file('python_repos.svg')
