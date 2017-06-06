@@ -1,0 +1,12 @@
+ <locationInfo>
+  <ret>ok</ret>
+  <ip>9.8.8.8</ip>
+  <data>
+   <country>ÃÀ¹ú</country>
+   <region></region>
+   <city></city>
+   <isp></isp>
+   <zip></zip>
+   <zone></zone>
+  </data>
+ </locationInfo>
