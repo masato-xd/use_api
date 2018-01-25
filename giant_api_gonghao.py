@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 infos = []
 
-name_ids = 'id.txt'
+name_ids = r'D:\Users\xudeng\Documents\GitHub\use_api\id.txt'
 with open(name_ids) as id_file:
     for name_id in id_file:
 
@@ -23,4 +23,4 @@ with open(name_ids) as id_file:
         num = tds[10].get_text()
         department = tds[13].get_text()
 
-        print name, num, department
+        print(name, num, department)
